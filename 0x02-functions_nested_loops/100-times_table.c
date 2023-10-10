@@ -16,22 +16,32 @@ void print_times_table(int n)
 			for (j = 0; j <= n; j++)
 			{
 				product = i * j;
-
-				if (j > 0)
+				if (product > 99)
 				{
-					printf(", ");
-				}
-				if (product < 10)
+					_putchar(',');
+					_putchar(32);
+					_putchar((product / 100) + '0');
+					_putchar(((product / 10) % 10) + '0');
+					_putchar((product % 10) + '0');
+			}
+				else if (product > 9)
 				{
-					printf("  %d", product);
-				}
-				else if (product < 100)
-				{
-					printf(" %d", product);
+					_putchar(',');
+					_putchar(32);
+					_putchar(32);
+					_putchar(((product / 10) % 10) + '0');
+					_putchar((product % 10) + '0');
 				}
 				else
 				{
-					printf("%d", product);
+					if (j != 0)
+					{
+						_putchar(',');
+						_putchar(32);
+						_putchar(32);
+						_putchar(32);
+					}
+					_putchar(product + '0');
 				}
 			}
 			printf("\n");
