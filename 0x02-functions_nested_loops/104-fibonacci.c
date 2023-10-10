@@ -5,19 +5,22 @@
  */
 int main(void)
 {
-	unsigned long int first = 1, second = 2, next, i;
+	unsigned long int prev = 1;
+	unsigned long int curr = 2;
+	unsigned long int next;
+	int count;
 
-	printf("%lu, ", first);
+	printf("%lu, %lu", prev, curr);
 
-	for (i = 1 ; i < 98; i++)
+	for (count = 2; count < 98; count++)
 	{
-		printf("%lu", second);
-		next = first + second;
-		first = second;
-		second = next;
-		if (i != 97)
-			printf(", ");
+		next = prev + curr;
+		printf(", %lu", next);
+		prev = curr;
+		curr = next;
 	}
+
 	printf("\n");
-	return (0);
+
+	return 0;
 }
