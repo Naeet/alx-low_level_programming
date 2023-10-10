@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * print_times_table - Prints the n times table, starting with 0
  * @n: The number for the times table
@@ -7,7 +6,7 @@
 
 void print_times_table(int n)
 {
-	if (n >= 0 && n <= 15)
+	if (n >= 0 && n <= 14)
 	{
 		int i, j, product;
 
@@ -44,7 +43,7 @@ void print_times_table(int n)
 					_putchar(product + '0');
 				}
 			}
-			printf("\n");
+			_putchar('\n');
 		}
 	}
 }
