@@ -43,10 +43,11 @@ int multiply(char *num1, char *num2)
 int main(int argc, char **argv)
 {
 	int result;
+
 	if (argc != 3)
 	{
 		printf("Error\n");
-		return(98);
+		return (98);
 	}
 
 	result = multiply(argv[1], argv[2]);
