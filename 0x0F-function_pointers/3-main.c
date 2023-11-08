@@ -6,7 +6,7 @@
  * main - entry
  * @argc: arg
  * @argv: arg
- * Return : always 0
+ * Return: always 0
  */
 int main(int argc, char *argv[])
 {
