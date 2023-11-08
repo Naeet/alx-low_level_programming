@@ -1,4 +1,4 @@
-#include "FUNCTION_POINTERS.H"
+#include "function_pointers.h"
 #include <stdio.h>
 /**
  * int_index -  fun that searches for an array
@@ -9,7 +9,7 @@
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
-	unsigned int i;
+	int i;
 
 	if (array == NULL || cmp == NULL)
 		return (-1);
