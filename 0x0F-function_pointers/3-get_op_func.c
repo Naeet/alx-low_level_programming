@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include "3-calc.h"
+#include <string.h>
 /**
  * get_op_func - decides which math to use based on the operator
  * @s: ptr
