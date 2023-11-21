@@ -2,7 +2,7 @@
 /**
  * get_nodeint_at_index - returns nth node
  * @head: head of node
- * @n: nth int to return the data
+ * @index: nth int to return the data
  * Return: nth node
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
